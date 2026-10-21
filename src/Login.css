@@ -1,0 +1,209 @@
+/* Obal celej stránky s jemným bodkovaným pozadím */
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fafafa;
+  background-image: 
+      radial-gradient(circle at 20% 30%, rgba(194, 24, 91, 0.03) 0%, transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(194, 24, 91, 0.03) 0%, transparent 40%),
+      radial-gradient(rgba(194, 24, 91, 0.08) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 40px 40px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+.login-logo {
+  width: 100%;
+  max-width: 120px; /* Zmenšené logo */
+  height: auto;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Karta */
+.login-card {
+  background: #ffffff;
+  border: 2px solid #FCE4EC;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(194, 24, 91, 0.12);
+  max-width: 680px;
+  width: 100%;
+  padding: 40px 50px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Hlavička a branding */
+.brand-title {
+  color: #8B0050;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 0 0 5px 0;
+  letter-spacing: -1px;
+}
+
+.brand-subtitle {
+  color: #C2185B;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+.author-box {
+  background: #FDF0F7;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.authors {
+  color: #1a2a3a;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.affiliation {
+  color: #666;
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Opis a vlastnosti */
+.description-box {
+  text-align: left;
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed #FCE4EC;
+}
+
+.description-box p {
+  margin-bottom: 12px;
+}
+
+.features-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #333;
+}
+
+.features-list li {
+  margin-bottom: 6px;
+}
+
+/* Formulár */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.login-form label {
+  color: #8B0050;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.login-input {
+  width: 100%;
+  max-width: 320px;
+  padding: 14px 18px;
+  border: 2px solid #C2185B;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: Verdana, sans-serif;
+  transition: box-shadow 0.2s;
+  box-sizing: border-box;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.login-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(194, 24, 91, 0.15);
+}
+
+.login-input:disabled {
+  background: #f0f0f0;
+  cursor: not-allowed;
+  border-color: #ccc;
+}
+
+/* Tlačidlo */
+.btn-login {
+  background: #8B0050;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+  transition: background 0.2s, transform 0.1s;
+  width: 100%;
+  max-width: 320px;
+}
+
+.btn-login:hover:not(:disabled) {
+  background: #C2185B;
+  transform: translateY(-2px);
+}
+
+.btn-login:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Chybové hlášky */
+.error-message {
+  color: #C2185B;
+  font-weight: bold;
+  font-size: 0.9rem;
+  min-height: 1.5em;
+  margin-top: 5px;
+}
+
+.attempts-info {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* Päta */
+.login-footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #FCE4EC;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Responzivita pre mobily */
+@media (max-width: 600px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+  .brand-title {
+    font-size: 2.2rem;
+  }
+  .brand-subtitle {
+    font-size: 0.95rem;
+  }
+  .description-box {
+    font-size: 0.85rem;
+  }
+}

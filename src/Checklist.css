@@ -1,0 +1,246 @@
+/* =========================================
+   1. ZÁKLADNÉ NASTAVENIA A HLAVIČKA
+   ========================================= */
+.checklist-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Verdana, sans-serif;
+}
+.back-link {
+  color: #C2185B;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.header-section h1 {
+  color: #8B0050;
+}
+.subtitle-text {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+.student-input {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  background: #FCE4EC;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.student-input input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #C2185B;
+  border-radius: 4px;
+  margin-left: 1rem;
+  width: 60%;
+  font-family: Verdana, sans-serif;
+}
+
+/* =========================================
+   2. POKYNY A CIELE (INFO SEKCIE)
+   ========================================= */
+.info-section {
+  background: #FDF0F7;
+  border-left: 4px solid #C2185B;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+.info-section h3 {
+  color: #8B0050;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  text-align: center; /* Nadpis vycentrovaný */
+}
+.info-section ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: left; /* TEXT ZAROVNANÝ VĽAVO */
+}
+
+/* =========================================
+   3. HODNOTIACE TABUĽKY (FÁZY)
+   ========================================= */
+.phase-section {
+  background: #fff;
+  border: 1px solid #FCE4EC;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.phase-section h2 {
+  color: #8B0050;
+  margin-top: 0;
+  border-bottom: 2px solid #FCE4EC;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.checklist-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.checklist-table th, .checklist-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: middle;
+}
+.checklist-table th {
+  background: #FCE4EC;
+  color: #8B0050;
+}
+
+/* OPRAVA ZALOMENIA GULIČIEK 2/1/0 */
+.score-col {
+  text-align: center !important;
+  width: 180px; /* Zväčšená šírka */
+  white-space: nowrap; /* Zakáže lámanie riadkov */
+}
+.radio-label {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 6px; /* Jemné medzery medzi guličkami */
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.note-input {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Verdana, sans-serif;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   4. KRITICKÉ CHYBY
+   ========================================= */
+.critical-section {
+  border: 2px solid #C2185B;
+  background: #FDF0F7;
+}
+.critical-section h2 {
+  text-align: center; /* NADPIS VYSTREDENÝ */
+}
+.critical-list {
+  list-style: none;
+  padding: 0;
+  padding-left: 1rem; /* Odsadenie od ľavého okraja */
+  margin: 0;
+  text-align: left; /* ZOZNAM ZAROVNANÝ VĽAVO */
+}
+.critical-list li {
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+.critical-list label {
+  display: flex;
+  align-items: flex-start; /* Zarovná checkbox s prvým riadkom textu */
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.4;
+}
+.critical-list input[type="checkbox"] {
+  margin-top: 0.25rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: #C2185B;
+}
+
+/* =========================================
+   5. VÝSLEDKOVÁ KARTA A TLAČIDLÁ
+   ========================================= */
+.result-card {
+  background: #C2185B;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+.result-card h2 {
+  margin-top: 0;
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 0.5rem;
+}
+.final-grade {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+  transition: opacity 0.2s;
+}
+.btn-print {
+  background: #8B0050;
+  color: white;
+}
+.btn-excel {
+  background: #217346;
+  color: white;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* =========================================
+   6. TLAČOVÁ VERZIA
+   ========================================= */
+.print-only-container {
+  display: none; /* Skryté na obrazovke */
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only-container {
+    display: block !important;
+    font-family: Verdana, sans-serif;
+    color: black;
+  }
+  
+  body {
+    background: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  @page {
+    margin: 1.5cm;
+  }
+  
+  .note-input {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+}
